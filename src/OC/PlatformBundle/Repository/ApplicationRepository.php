@@ -24,8 +24,6 @@ class ApplicationRepository extends EntityRepository
         //limitation des réuslats
         $qb->setMaxResults($limit);
 
-        var_dump($qb->getQuery()->getResult());
-
         return $qb->getQuery()->getResult();
 
     }
