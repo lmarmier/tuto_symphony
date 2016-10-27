@@ -1,0 +1,16 @@
+{% extends "OCPlatformBundle::layout.html.twig" %}
+
+{% block title %}
+    Supprimer une annonce - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+    <h2>Annonce supprimée</h2>
+
+    <p>L'annonce à été supprimée correctement</p>
+
+    <a href="{{ path('oc_platform_home') }}" class="btn btn-default">
+        <i class="glyphicon glyphicon-chevron-left"></i>
+        Retour à l'accueil
+    </a>
+{% endblock %}
