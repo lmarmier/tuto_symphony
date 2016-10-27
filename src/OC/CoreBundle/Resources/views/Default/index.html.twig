@@ -1,0 +1,12 @@
+{% extends "OCCoreBundle::layout.html.twig" %}
+
+{% block body %}
+
+    {% for message in app.session.flashbag.get('warning') %}
+        <p class="bg-warning col-md-9">{{ message }}</p>
+    {% endfor %}
+
+    <h1>Bienvenue sur la page d'accueil</h1>
+    <p>Ce site vous permet de poster des annonces de mission temporaire ou permanente...</p>
+    <a href="{{ path('oc_core_contact') }}">Nous contacter</a>
+{% endblock %}
